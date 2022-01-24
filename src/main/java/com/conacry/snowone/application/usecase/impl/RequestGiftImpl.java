@@ -8,10 +8,12 @@ import com.conacry.snowone.application.usecase.RequestGift;
 import com.conacry.snowone.domain.entity.Gift;
 import com.conacry.snowone.domain.entity.identifier.GiftIdGenerator;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.Nullable;
 
 @Slf4j
+@Service
 public class RequestGiftImpl implements RequestGift {
 
     private final ChildInfoGateway childInfoGateway;

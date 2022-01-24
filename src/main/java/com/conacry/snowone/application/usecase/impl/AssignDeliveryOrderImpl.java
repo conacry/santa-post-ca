@@ -6,8 +6,10 @@ import com.conacry.snowone.application.port.EventPublisher;
 import com.conacry.snowone.application.usecase.AssignDeliveryOrder;
 import com.conacry.snowone.domain.entity.identifier.DeliveryOrderIdentifier;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
 
 @Slf4j
+@Service
 public class AssignDeliveryOrderImpl implements AssignDeliveryOrder {
 
     private final DeliveryOrderGateway deliveryOrderGateway;

@@ -10,10 +10,12 @@ import com.conacry.snowone.domain.entity.identifier.DeliveryOrderIdGenerator;
 import com.conacry.snowone.domain.entity.identifier.GiftIdentifier;
 import com.conacry.snowone.domain.entity.identifier.PackCodeGenerator;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.Nullable;
 
 @Slf4j
+@Service
 public class CreateDeliveryOrderImpl implements CreateDeliveryOrder {
 
     private final GiftGateway giftGateway;

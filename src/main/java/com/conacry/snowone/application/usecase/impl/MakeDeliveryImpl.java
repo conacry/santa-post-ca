@@ -10,6 +10,7 @@ import com.conacry.snowone.application.usecase.MakeDelivery;
 import com.conacry.snowone.domain.entity.DeliveryOrder;
 import com.conacry.snowone.domain.entity.DeliveryState;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.Nullable;
 import java.util.Collections;
@@ -17,6 +18,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Slf4j
+@Service
 public class MakeDeliveryImpl implements MakeDelivery {
 
     private final DeliveryOrderGateway deliveryOrderGateway;

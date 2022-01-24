@@ -5,8 +5,10 @@ import com.conacry.snowone.application.port.EventPublisher;
 import com.conacry.snowone.application.usecase.CompleteDelivery;
 import com.conacry.snowone.domain.entity.identifier.DeliveryOrderIdentifier;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
 
 @Slf4j
+@Service
 public class CompleteDeliveryImpl implements CompleteDelivery {
 
     private final DeliveryOrderGateway deliveryOrderGateway;
