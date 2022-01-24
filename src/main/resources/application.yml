@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: gcd
+  main:
+    banner-mode: "off"
+  datasource:
+    dataSourceClassName: org.postgresql.ds.PGSimpleDataSource
+    username: gcd_u
+    password: bUJfKyGtz2CseV
+    maximumPoolSize: 30
+    minimumIdle: 5
+    dataSourceProperties:
+      serverName: localhost
+      portNumber: 5439
+      databaseName: gcd_db
+  flyway:
+    enabled: true
+    locations: "classpath:db/migration"
+
+server:
+  port: 8099
