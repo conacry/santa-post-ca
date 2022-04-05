@@ -1,18 +1,18 @@
 spring:
   application:
-    name: gcd
+    name: santa-post-ca
   main:
     banner-mode: "off"
   datasource:
     dataSourceClassName: org.postgresql.ds.PGSimpleDataSource
-    username: gcd_u
+    username: santa_post_u
     password: bUJfKyGtz2CseV
     maximumPoolSize: 30
     minimumIdle: 5
     dataSourceProperties:
-      serverName: localhost
-      portNumber: 5439
-      databaseName: gcd_db
+      serverName: ${DATABASE_HOST}
+      portNumber: 5432
+      databaseName: santa_post_db
   jpa:
     hibernate:
       ddl-auto: none
