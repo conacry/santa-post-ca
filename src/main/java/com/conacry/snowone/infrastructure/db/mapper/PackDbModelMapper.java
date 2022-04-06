@@ -23,7 +23,7 @@ public class PackDbModelMapper {
     public Pack toEntity(PackDbModel model) {
         var size = PackSize.valueOf(model.getSize());
         var type = PackType.valueOf(model.getType());
-        var code = new PackCode(model.getId());
+        var code = PackCode.of(model.getId());
 
         return Pack.of(code, size, type);
     }
