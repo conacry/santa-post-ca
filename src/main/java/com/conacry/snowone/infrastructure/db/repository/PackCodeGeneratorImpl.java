@@ -17,6 +17,6 @@ public class PackCodeGeneratorImpl implements PackCodeGenerator {
     @Override
     public PackCode generate() {
         var next = packDao.nextId();
-        return new PackCode(next);
+        return PackCode.of(next);
     }
 }

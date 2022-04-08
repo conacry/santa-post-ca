@@ -17,6 +17,6 @@ public class GiftIdGeneratorImpl implements GiftIdGenerator {
     @Override
     public GiftIdentifier generate() {
         var next = giftDao.nextId();
-        return new GiftIdentifier(next);
+        return GiftIdentifier.of(next);
     }
 }

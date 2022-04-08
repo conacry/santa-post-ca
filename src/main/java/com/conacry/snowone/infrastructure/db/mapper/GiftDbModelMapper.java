@@ -29,7 +29,7 @@ public class GiftDbModelMapper {
 
     public Gift toEntity(GiftDbModel model) {
         var child = childDbModelMapper.toEntity(model.getChildDbModel());
-        var identifier = new GiftIdentifier(model.getId());
+        var identifier = GiftIdentifier.of(model.getId());
         var giftSize = GiftSize.valueOf(model.getSize());
 
         return Gift.of(identifier, child, giftSize);
